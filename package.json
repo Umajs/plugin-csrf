@@ -1,0 +1,46 @@
+{
+  "name": "@umajs/plugin-csrf",
+  "version": "0.1.1",
+  "description": "Umajs CSRF plugin",
+  "author": "hengg",
+  "main": "lib/index.js",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "index.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Umajs/plugin-csrf.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "app": "ts-node-dev tests/app.ts"
+  },
+  "dependencies": {
+    "csrf": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-views": "^2.0.3",
+    "@types/shelljs": "^0.8.7",
+    "@umajs/core": "^0.1.0",
+    "@umajs/router": "^0.1.0",
+    "cz-conventional-changelog": "^3.2.1",
+    "koa": "^2.11.0",
+    "shelljs": "^0.8.3",
+    "ts-node": "^8.8.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
