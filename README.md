@@ -1,2 +1,0 @@
-# plugin-csrf
-csrf plugin
